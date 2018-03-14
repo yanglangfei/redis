@@ -1,0 +1,65 @@
+下载 redis
+
+https://github.com/MSOpenTech/redis/tags
+http://www.redis.net.cn/
+
+安装
+
+解压 压缩包到安装目录
+
+cd C:\Users\Administrator\Downloads\Redis-x64-3.2.100
+
+启动 redis
+
+redis-server redis.windows.conf
+
+设置 redis 为服务
+
+redis-server --service-install redis.windows-service.conf --loglevel verbose
+
+
+常用命令
+
+卸载服务：redis-server --service-uninstall
+
+开启服务：redis-server --service-start
+
+停止服务：redis-server --service-stop
+
+
+
+测试  redis
+
+redis-cli.exe -h 127.0.0.1 -p 6379
+
+set a "hello"
+
+get a
+
+设置密码
+
+config set requirepass admin
+
+验证密码
+
+auth admin123
+
+查询密码
+
+config get requirepass
+
+登录有密码 redis
+
+redis-cli -p 6379 -a admin123
+
+先登陆后验证：
+
+redis-cli -p 6379
+
+redis 127.0.0.1:6379> auth test123
+
+
+
+http://blog.didispace.com/springbootredis/
+
+
