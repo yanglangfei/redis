@@ -1,11 +1,11 @@
-package com.redis.redis.service.impl;
-
-import com.redis.redis.service.TokenService;
+package com.app.app.service.impl;
+import com.app.app.service.TokenService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
+
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 

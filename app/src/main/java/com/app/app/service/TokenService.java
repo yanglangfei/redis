@@ -1,9 +1,9 @@
-package com.redis.redis.service;
+package com.app.app.service;
 
 public interface TokenService {
 
 
-    void  saveUserToken(Long userId,String loginInfo);
+    void  saveUserToken(Long userId, String loginInfo);
 
 
     String   getUserToken(Long userId);

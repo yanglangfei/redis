@@ -1,6 +1,5 @@
-package com.redis.redis.controller;
-
-import com.redis.redis.service.TokenService;
+package com.app.app.controller;
+import com.app.app.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
